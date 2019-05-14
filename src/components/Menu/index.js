@@ -1,11 +1,13 @@
-import React from 'react'
-import QRCode from 'react-native-qrcode'
+import React from 'react';
+import QRCode from 'react-native-qrcode';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 
-import { Container, Code, Nav, NavItem, NavText, SignOutButton, SignOutButtonText } from './style'
+import {
+  Container, Code, Nav, NavItem, NavText, SignOutButton, SignOutButtonText,
+} from './style';
 
-export default function Menu ({ translateY }) {
+export default function Menu({ translateY }) {
     return(
         <Container style={{
             opacity: translateY.interpolate({
